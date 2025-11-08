@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Issue Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Issue Tracker</h1>
+  <div class="container">
+    <form id="issueForm">
+      <input type="text" id="issueTitle" placeholder="Issue Title" required />
+      <textarea id="issueDesc" placeholder="Describe the issue..." required></textarea>
+      <select id="issueSeverity" required>
+        <option value="">Select Severity</option>
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+      <input type="text" id="issueAssignedTo" placeholder="Assigned To" required />
+      <button type="submit">Add Issue</button>
+    </form>
+
+    <div id="issuesList"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
