@@ -1,0 +1,84 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f5f7fa;
+  color: #222;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #0e65c8;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+input,
+textarea,
+select,
+button {
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.issue {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 15px;
+  padding: 15px;
+  background: #fafafa;
+  position: relative;
+}
+
+.status {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.closed {
+  color: #28a745;
+}
+
+.actions {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.actions button {
+  margin-left: 5px;
+  background: #dc3545;
+}
+
+.actions button:first-child {
+  background: #17a2b8;
+}
+
+.actions button:hover {
+  opacity: 0.9;
+}
